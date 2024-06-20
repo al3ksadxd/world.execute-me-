@@ -4,7 +4,6 @@ using System.Drawing;
 using NAudio.MediaFoundation;
 using NAudio.Wave;
 
-
 class Program
 {
     static void Main(string[] args)
@@ -32,18 +31,25 @@ class Program
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 Console.ForegroundColor = ConsoleColor.White;
 
+
+
+
                 if (skipToSeconds == 0)
                 {
                     TextOne();
                 }
-                TextTwo();
-                TextThree();
-                TextFour();
-                TextFive();
-                TextSix();
-                TextSeven();
-                TextEight();
-                TextNine();
+                if (skipToSeconds == 0)
+                {
+                    TextTwo();
+                    TextThree();
+                    TextFour();
+                    TextFive();
+                    TextSix();
+                    TextSeven();
+                    TextEight();
+                    TextNine();
+                }
+                
                 if (skipToSeconds == 103.5 || skipToSeconds == 0)
                 {
                     TextTen();
@@ -125,7 +131,7 @@ class Program
         }
         Console.WriteLine("\n");
 
-    }
+    }//
     static void TextTwo()
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -185,7 +191,7 @@ class Program
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\n");
 
-    }
+    }//
     static void TextThree()
     {
         string text12 = "SIMULATION";
@@ -307,7 +313,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         Console.WriteLine("\n");
         Console.ForegroundColor = ConsoleColor.White;
 
-    }
+    }//
     static void TextFour()
     {
         string text21 = "if(me instanceof PointSet)";
@@ -412,7 +418,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         Console.WriteLine("}");
         Console.WriteLine("");
 
-    }
+    }//
     static void TextFive()
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -464,7 +470,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
             Thread.Sleep(8);
         }
 
-    }
+    }//
     static void TextSix()
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -504,7 +510,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
             Thread.Sleep(100);
         }
         Console.WriteLine("");
-    }
+    }//
     static void TextSeven()
     {
         Console.ForegroundColor = ConsoleColor.White;
@@ -562,11 +568,11 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text47)
         {
             Console.Write(c);
-            Thread.Sleep(33);
+            Thread.Sleep(35);
         }
         Console.WriteLine("");
         Console.ForegroundColor = ConsoleColor.White;
-    }
+    }//
     static void TextEight()
     {
         Console.ForegroundColor = ConsoleColor.White;
@@ -662,7 +668,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         Console.WriteLine("");
 
 
-    }
+    }//
     static void TextNine()
     {
         Console.WriteLine("\n\n\n");
@@ -714,9 +720,9 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text64)
         {
             Console.Write(c);
-            Thread.Sleep(85);
+            Thread.Sleep(90);
         }
-    }
+    }//
     static void TextTen()
     {
         Console.ForegroundColor = ConsoleColor.White;
@@ -725,14 +731,14 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text65)
         {
             Console.Write(c);
-            Thread.Sleep(110);
+            Thread.Sleep(122);
         }
         Console.ForegroundColor = ConsoleColor.Green;
         string text651 = "vibation";
         foreach (char c in text651)
         {
             Console.Write(c);
-            Thread.Sleep(110);
+            Thread.Sleep(125);
         }
         Console.ForegroundColor = ConsoleColor.White;
         string text6511 = "\"))";
@@ -751,14 +757,14 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text66)
         {
             Console.Write(c);
-            Thread.Sleep(135);
+            Thread.Sleep(147);
         }
         Console.ForegroundColor = ConsoleColor.Green;
         string text661 = "complate";
         foreach (char c in text661)
         {
             Console.Write(c);
-            Thread.Sleep(135);
+            Thread.Sleep(155);
         }
         Console.ForegroundColor = ConsoleColor.White;
         string text6611 = "\");";
@@ -864,7 +870,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text77)
         {
             Console.Write(c);
-            Thread.Sleep(150);
+            Thread.Sleep(152);
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
@@ -872,7 +878,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text771)
         {
             Console.Write(c);
-            Thread.Sleep(65);
+            Thread.Sleep(80);
         }
         Console.ForegroundColor = ConsoleColor.White;
         string text772 = "\");";
@@ -898,14 +904,14 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text79)
         {
             Console.Write(c);
-            Thread.Sleep(80);
+            Thread.Sleep(75);
         }
         Console.WriteLine("\n}");
         string text80 = "catch(IllegalArgumentException e)";
         foreach (char c in text80)
         {
             Console.Write(c);
-            Thread.Sleep(75);
+            Thread.Sleep(70);
         }
         Console.WriteLine("\n{");
         string text81 = "     world.announce(\"";
@@ -930,7 +936,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         }
         Console.WriteLine("\n}");
 
-    }
+    }//
     static void TextEleven()
     {
         Console.WriteLine("\n");
@@ -959,7 +965,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         for (int i = 1; i <= 100; i++)
         {
             Console.Write("\r" + i + "%");
-            Thread.Sleep(25);
+            Thread.Sleep(37);
             if (i == 20)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -983,19 +989,19 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         }
         Console.Write("Execution");
         Console.ForegroundColor = ConsoleColor.White;
-    }
+    }//
     static void TextTwelve()
     {
-
-        
-        for (int i = 0; i <25; i++)
+        Thread.Sleep(6);
+        Console.WriteLine("\n");
+        for (int i = 0; i <34; i++)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             string text00 = "world.runExecution();";
             foreach (char c in text00)
             {
                 Console.Write(c);
-                Thread.Sleep(15);
+                Thread.Sleep(6);
             }
             Console.WriteLine("\n");
         }
@@ -1057,8 +1063,9 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
             Thread.Sleep(15);
         }
         Console.WriteLine("\n");
+        Thread.Sleep(1);
         Console.ForegroundColor = ConsoleColor.White;
-    }
+    }//
     static void TextThirteen()
     {
         Console.ForegroundColor = ConsoleColor.White;
@@ -1067,7 +1074,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text1)
         {
             Console.Write(c);
-            Thread.Sleep(50);
+            Thread.Sleep(60);
         }
         Console.WriteLine("\n{");
         string text2 = "    you.setExecution(me.toExecution());";
@@ -1107,7 +1114,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         foreach (char c in text5)
         {
             Console.Write(c);
-            Thread.Sleep(10);
+            Thread.Sleep(20);
         }
 
 
