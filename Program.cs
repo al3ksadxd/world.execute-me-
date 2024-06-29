@@ -38,6 +38,7 @@ class Program
                 {
                     TextOne();
                 }
+
                 if (skipToSeconds == 0)
                 {
                     TextTwo();
@@ -48,7 +49,7 @@ class Program
                     TextSeven();
                     TextEight();
                     TextNine();
-                }
+                }//
                 
                 if (skipToSeconds == 103.5 || skipToSeconds == 0)
                 {
@@ -1261,7 +1262,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         Console.WriteLine("");
 
 
-    }
+    }//
     static void ExecutionExe()
     {
 
@@ -1283,7 +1284,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         Console.ForegroundColor = ConsoleColor.White;
 
 
-    }
+    }//
     static void OpenUrl(string url)
     {
         try
