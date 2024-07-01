@@ -6,10 +6,21 @@ using NAudio.Wave;
 
 class Program
 {
+
+    //if program dont work install NAudio open NuGet Package Manager Console and type " Install-Package NAudio "
+
+
     static void Main(string[] args)
     {
-        
-        string filePath = @"C:\Users\aki pro\Desktop\worldexecute\world.execute-me-\noname.mp3"; // Specify the full path to your noname.mp3 file here
+        string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
+        string filePath = Path.Combine(directoryPath, "noname.mp3");
+
+        if (!File.Exists(filePath))
+        {
+            Console.WriteLine("MP3 file not found in the executable directory.");
+            return;
+        }
+
 
         double skipToSeconds = 0;
 
