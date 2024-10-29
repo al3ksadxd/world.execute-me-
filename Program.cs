@@ -6,12 +6,23 @@ using NAudio.Wave;
 
 class Program
 {
+
+    //if program dont work install NAudio open NuGet Package Manager Console and type " Install-Package NAudio "
+
+
     static void Main(string[] args)
     {
-        
-        string filePath = @"C:\Users\aki pro\Desktop\worldexecute\world.execute-me-\noname.mp3"; // Specify the full path to your noname.mp3 file here
+        string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
+        string filePath = Path.Combine(directoryPath, "noname.mp3");
 
-        double skipToSeconds = 0;
+        if (!File.Exists(filePath))
+        {
+            Console.WriteLine("MP3 file not found in the executable directory.");
+            return;
+        }
+
+
+        double skipToSeconds = 5555;
 
         try
         {
@@ -21,7 +32,7 @@ class Program
 
                 audioFile.CurrentTime = TimeSpan.FromSeconds(skipToSeconds);
 
-                
+
 
                 outputDevice.Init(audioFile);
                 outputDevice.Play();
@@ -32,21 +43,51 @@ class Program
                 Console.ForegroundColor = ConsoleColor.White;
 
 
+                
 
 
                 if (skipToSeconds == 0)
                 {
                     TextOne();
                 }
-                if (skipToSeconds == 0)
+
+                if (skipToSeconds == 6.5 || skipToSeconds == 0)
                 {
                     TextTwo();
+                }
+
+                if (skipToSeconds == 14 || skipToSeconds == 0)
+                {
                     TextThree();
+                }
+
+                if (skipToSeconds == 29.8 || skipToSeconds == 0)
+                {
                     TextFour();
+                }
+
+                if (skipToSeconds == 44.3 || skipToSeconds == 0)
+                {
                     TextFive();
+                }
+
+                if (skipToSeconds == 51.8 || skipToSeconds == 0)
+                {
                     TextSix();
+                }
+
+                if (skipToSeconds == 59.1 || skipToSeconds == 0)
+                {
                     TextSeven();
+                }
+
+                if (skipToSeconds == 74 || skipToSeconds == 0)
+                {
                     TextEight();
+                }
+
+                if (skipToSeconds == 88.5 || skipToSeconds == 0)
+                {
                     TextNine();
                 }
                 
@@ -54,26 +95,33 @@ class Program
                 {
                     TextTen();
                 }
+
                 if (skipToSeconds == 134 || skipToSeconds == 0)
                 {
                     TextEleven();
                 }
+
                 if (skipToSeconds == 148 || skipToSeconds == 0)
                 {
                     TextTwelve();
                 }
+
                 if (skipToSeconds ==162.8 || skipToSeconds == 0)
                 {
                     TextThirteen();
                 }
+
                 if (skipToSeconds == 205 || skipToSeconds == 0)
                 {
                     ExecutionExe();
                 }
 
 
+
+
+
                 OpenUrl("https://www.youtube.com/watch?v=ESx_hy1n7HA");
-                OpenUrl("");
+                OpenUrl("https://www.instagram.com/infinity.edge.studio/");
 
 
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1261,7 +1309,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         Console.WriteLine("");
 
 
-    }
+    }//
     static void ExecutionExe()
     {
 
@@ -1283,7 +1331,7 @@ __      _____  _ __| | __| |  _____  _____  ___ _   _| |_ ___ / / __ ___   __\ \
         Console.ForegroundColor = ConsoleColor.White;
 
 
-    }
+    }//
     static void OpenUrl(string url)
     {
         try
